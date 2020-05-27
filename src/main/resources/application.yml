@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    data-username: root
+    data-password: root
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/my_school
+    username: root
+    password: root
+
+#debug: true
+mybatis:
+  type-aliases-package: org.example.entity
+  mapper-locations: mapper/*
+
+
+
+

@@ -1,0 +1,9 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.CityMapper">
+
+    <select id="findById"  resultType="city">
+        select id,concat('mapper file:',name) AS name,age from city where id = #{id}
+    </select>
+
+</mapper>
